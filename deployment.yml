@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gagan-deployment
+  name: baizura-deployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: my-gagan
+      app: my-baizura
   template:
     metadata:
       labels:
-        app: my-gagan
+        app: my-baizura
     spec:
       containers:
-      - name: my-image
-        image: gagandeepthinknyx/intel1:latest
+      - name: my-container
+        image: baizuradocker/intel5:latest
         ports:
         - containerPort: 8080
