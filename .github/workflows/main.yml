@@ -61,7 +61,7 @@ jobs:
     needs: test
     steps:
       - name: clone the repo
-        uses: actions/checkout@4.1.5
+        uses: actions/checkout@v4.1.5
       - name: deploy the app in kubernetes environment 
         run: |
           kubectl apply -f deployment.yml
